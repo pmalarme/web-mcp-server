@@ -1,0 +1,12 @@
+[project]
+name = "web-mcp-server"
+version = "0.1.0"
+description = "Small MCP server to search web content and get the content of web pages."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.9.0",
+    "requests>=2.32.3",
+    "python-dotenv>=1.1.0",
+    "markitdown>=0.1.1",
+]
