@@ -13,6 +13,7 @@ google_search_url = "https://www.googleapis.com/customsearch/v1"
 
 # Create an MCP server
 mcp = FastMCP("Website Content Fetcher")
+# mcp = FastMCP("Website Content Fetcher", port=3000)
 
 @mcp.tool()
 def get_website_content(website_url: str) -> str:
@@ -64,3 +65,5 @@ def get_contents(query: str, num_results: int = 5) -> str:
             
     return search_results
 
+# if __name__ == "__main__":
+#     mcp.run(transport='sse')
